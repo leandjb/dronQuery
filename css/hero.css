@@ -1,0 +1,108 @@
+html,
+body {
+  background: #fafafa;
+  padding: 0px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
+  font-family: "Open Sans";
+}
+.hero-body .container {
+  padding: 0rem;
+  margin: 0px 0px 0px 0px;
+  max-width: 100%;
+  width: 100%;
+}
+.hero-body .title {
+  color: #fafafaff;
+}
+.hero-body .subtitle {
+  color: #fafafaff;
+  padding-top: 0rem;
+  line-height: 1.5;
+}
+.features {
+  padding: 0rem 0;
+}
+.navbar-menu {
+  padding: 0rem 0;
+  margin: 0px 0px 0px 0px;
+  font-size: 14px;
+}
+.navbar-brand {
+  padding: 0rem 0;
+  margin: 0px 0px 0px 0px;
+}
+.navbar-item {
+  padding: 0rem 0;
+  margin: 0px 0px 0px 0px;
+  width: 100%;
+}
+.ul {
+  font-size: 14px;
+  padding: 0rem 0;
+  margin: 0px 0px 0px 0px;
+}
+
+.li {
+  font-size: 9px;
+  padding: 0rem 0;
+  margin: 0px 0px 0px 0px;
+}
+.box.cta {
+  border-radius: 0;
+  border-left: none;
+  border-right: none;
+}
+.card-image > .fa {
+  font-size: 8rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  color: #006680ff;
+}
+.card-content .content {
+  font-size: 14px;
+  margin: 1rem 1rem;
+}
+.card-content .content h4 {
+  font-size: 14px;
+  font-weight: 700;
+}
+.card {
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
+  margin-bottom: 2rem;
+}
+.intro {
+  padding: 4rem 0;
+  text-align: center;
+}
+.sandbox {
+  padding: 4rem 0;
+}
+.tile.notification {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.is-shady {
+  animation: flyintoright 0.4s backwards;
+  background: #fafafa;
+  box-shadow: #006680ff 0 1px 0;
+  border-radius: 4px;
+  display: inline-block;
+  margin: 10px;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+}
+.is-shady:hover {
+  box-shadow: 0 10px 16px rgba(0, 0, 0, 0.13), 0 6px 6px rgba(0, 0, 0, 0.19);
+}
+.hero-foot {
+  padding: 0rem 0;
+  color: #006680ff;
+  font-family: "Open Sans";
+  float: right;
+  /* margin-left: 0rem; */
+}
+.tag {
+  font-family: "Open Sans";
+  font-size: 14px;
+}
