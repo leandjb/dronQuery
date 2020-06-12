@@ -2,11 +2,11 @@
 
 /* servicios tilemap */
 //TileOSM Gray
-// const tileProvider = "https://tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png";
+const tileProvider = "https://tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png";
 
 //tileStadia
-const tileProvider =
-  "https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}.png";
+// const tileProvider =
+//   "https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}.png";
 
 //tileStadia Outdoors
 // const tileProvider ="https://tiles.stadiamaps.com/tiles/outdoors/{z}/{x}/{y}{r}.png";
