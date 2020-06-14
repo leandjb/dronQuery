@@ -1,46 +1,40 @@
 /* Script de integración con libreria Leaflet 1.6*/
 
 /* servicios tilemap */
-//TileOSM Gray
+//tile OSM HOT
+const tileProvider = "https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png";
+
+//Tile OSM Gray
 // const tileProvider = "https://tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png";
 
-//tileStadia
-// const tileProvider =
-//   "https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}.png";
+//tile ESRI world
+// const tileProvider = "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}";
 
-//tileStadia Outdoors
-// const tileProvider = "https://tiles.stadiamaps.com/tiles/outdoors/{z}/{x}/{y}.png";
-
-//tileESRI world
-const tileProvider =
-  "https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}";
-
-// const tileProvider = "http://{s}.tile.osm.org/{z}/{x}/{y}.png";
 /* servcios WMS (IGAC) */
 
 /* configuración de viewport del Geovisor */
-const geoViewPort = L.map("geoViewId").setView([11.1, -74.2], 10);
+const mapPort = L.map("mapView").setView([11.1, -74.2], 10);
 
 L.tileLayer(tileProvider, {
   attribution: "<a href='https://www.openstreetmap.org/'>OSM</a>",
-  maxZoom: 20,
+  maxZoom: 19,
   tileSize: 256,
   zoomOffset: 0,
-}).addTo(geoViewPort);
+}).addTo(mapPort);
 
 let circle = L.circle([11.11972222, -74.23055556], {
   color: "red",
-  fillColor: "#f03",
-  fillOpacity: 0.5,
+  fillColor: "red",
+  fillOpacity: 0.3,
   radius: 9000,
-}).addTo(geoViewPort);
+}).addTo(mapPort);
 
 let circle2 = L.circle([10.88861111, -74.78166667000001], {
   color: "red",
-  fillColor: "#f03",
-  fillOpacity: 0.5,
+  fillColor: "red",
+  fillOpacity: 0.3,
   radius: 9000,
-}).addTo(geoViewPort);
+}).addTo(mapPort);
 
 /* Ubicar cliente */
 /* L.locate({ enableHighAccuracy: true });
@@ -2470,22 +2464,22 @@ var airportFeature = [
   },
 ];
 
-L.geoJSON(airportFeature).addTo(geoViewPort);
+L.geoJSON(airportFeature).addTo(mapPort);
 
 /* inspector de consultas */
 
 /* L.marker(airportFeature)
-  .addTo(geoViewPort)
+  .addTo(mapPort)
   .bindPopup(airportFeature.NOMBRE_GEO.toString()); */
 
 /* acciones del inspector de consultas */
 
 let popup = L.popup();
 function onMapClick(e) {
-  popup.setLatLng(e.latlng).setContent(e.latlng.toString()).openOn(geoViewPort);
+  popup.setLatLng(e.latlng).setContent(e.latlng.toString()).openOn(mapPort);
 }
-geoViewPort.on("click", onMapClick);
+mapPort.on("click", onMapClick);
 
-// airportFeature.bindPopup(airportFeature.AIRPORT_NAME.toString()).setContent().openOn(geoViewPort)
-// marker.bindPopup().setContent(airportFeature.AIRPORT_NAME.toString()).openOn(geoViewPort)
+// airportFeature.bindPopup(airportFeature.AIRPORT_NAME.toString()).setContent().openOn(mapPort)
+// marker.bindPopup().setContent(airportFeature.AIRPORT_NAME.toString()).openOn(mapPort)
 // circle.bindPopup(airportFeature.AIRPORT_NAME.toString())
