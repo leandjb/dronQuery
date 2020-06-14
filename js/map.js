@@ -1,8 +1,17 @@
 /* Script de integración con libreria Leaflet 1.6*/
 
 /* servicios tilemap */
+<<<<<<< HEAD
 //tile OSM HOT
 const tileProvider = "https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png";
+=======
+//TileOSM Gray
+// const tileProvider = "https://tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png";
+
+//tileStadia
+const tileProvider =
+  "https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}.png";
+>>>>>>> 2b52956ae45ffaf8dd2981b04a171e21378aba23
 
 //Tile OSM Gray
 // const tileProvider = "https://tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png";
