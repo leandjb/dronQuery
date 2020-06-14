@@ -2479,7 +2479,3 @@ function onMapClick(e) {
   popup.setLatLng(e.latlng).setContent(e.latlng.toString()).openOn(mapPort);
 }
 mapPort.on("click", onMapClick);
-
-// airportFeature.bindPopup(airportFeature.AIRPORT_NAME.toString()).setContent().openOn(mapPort)
-// marker.bindPopup().setContent(airportFeature.AIRPORT_NAME.toString()).openOn(mapPort)
-// circle.bindPopup(airportFeature.AIRPORT_NAME.toString())
