@@ -1,6 +1,16 @@
 /* Script de integración con libreria Leaflet 1.6*/
+/* Función de "toggle menu" @Bradcomp */
+(function () {
+  var burger = document.querySelector(".burger");
+  var menu = document.querySelector("#" + burger.dataset.target);
+  burger.addEventListener("click", function () {
+    burger.classList.toggle("is-active");
+    menu.classList.toggle("is-active");
+  });
+})();
 
 /* servicios tilemap */
+<<<<<<< HEAD
 <<<<<<< HEAD
 //tile OSM HOT
 const tileProvider = "https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png";
@@ -12,6 +22,10 @@ const tileProvider = "https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png";
 const tileProvider =
   "https://tiles.stadiamaps.com/tiles/alidade_smooth/{z}/{x}/{y}.png";
 >>>>>>> 2b52956ae45ffaf8dd2981b04a171e21378aba23
+=======
+//tile OSM HOT
+const tileProvider = "https://{s}.tile.openstreetmap.fr/hot/{z}/{x}/{y}.png";
+>>>>>>> c845e9fd8c293232a35ef898ace5d320cb2ba7c3
 
 //Tile OSM Gray
 // const tileProvider = "https://tiles.wmflabs.org/bw-mapnik/{z}/{x}/{y}.png";
